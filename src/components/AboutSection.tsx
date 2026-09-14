@@ -17,7 +17,7 @@ export const AboutSection: React.FC = () => {
               <img
                 src="/images/hero.jpg"
                 alt="M.A. Agronegócios no campo"
-                className="w-full h-[480px] object-cover"
+                className="w-full h-64 sm:h-[480px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0C10] via-transparent to-transparent opacity-90" />
 

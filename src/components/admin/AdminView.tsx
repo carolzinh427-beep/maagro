@@ -42,7 +42,7 @@ export const AdminView: React.FC = () => {
 
   // Quick Demo Login
   const handleQuickDemoLogin = () => {
-    loginAdmin('admin', 'admin123');
+    loginAdmin('maagro', 'maagro26');
   };
 
   // Render Login Screen if not authenticated
@@ -74,7 +74,7 @@ export const AdminView: React.FC = () => {
                 type="text"
                 value={username}
                 onChange={e => { setUsername(e.target.value); setLoginError(false); }}
-                placeholder="Ex: admin"
+                placeholder="maagro"
                 className="w-full bg-[#1A1D26] border border-slate-700 rounded px-3.5 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-[#D4AF37]"
               />
             </div>
@@ -85,14 +85,14 @@ export const AdminView: React.FC = () => {
                 type="password"
                 value={password}
                 onChange={e => { setPassword(e.target.value); setLoginError(false); }}
-                placeholder="••••••••"
+                placeholder="maagro26"
                 className="w-full bg-[#1A1D26] border border-slate-700 rounded px-3.5 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-[#D4AF37]"
               />
             </div>
 
             {loginError && (
               <div className="p-3 bg-red-950/60 border border-red-500/40 text-red-300 text-xs rounded">
-                Credenciais incorretas. Tente usar <strong>admin</strong> / <strong>admin123</strong>.
+                Credenciais incorretas. Utilize <strong>maagro</strong> / <strong>maagro26</strong>.
               </div>
             )}
 

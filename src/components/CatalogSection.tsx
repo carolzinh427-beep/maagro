@@ -154,7 +154,7 @@ export const CatalogSection: React.FC = () => {
               >
                 <div>
                   {/* Photo Container */}
-                  <div className="relative h-64 overflow-hidden bg-slate-900">
+                  <div className="relative h-44 sm:h-64 overflow-hidden bg-slate-900">
                     <img
                       src={prop.photos[0]}
                       alt={prop.name}

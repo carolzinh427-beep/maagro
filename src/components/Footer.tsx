@@ -51,22 +51,12 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Links 2 & Admin */}
-          <div className="md:col-span-4 space-y-4">
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider font-outfit">Gestão & Transparência</h4>
-            <p className="text-slate-400 text-xs leading-relaxed">
-              Conteúdo demonstrativo/editável preparado para integração com banco de dados real e painel administrativo.
+          {/* Institutional Info */}
+          <div className="md:col-span-7 space-y-3">
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider font-outfit">M.A. Agronegócios</h4>
+            <p className="text-slate-400 text-xs leading-relaxed max-w-md">
+              Plataforma comercial e institucional desenvolvida para intermediação de propriedades rurais de grande porte e máquinas agrícolas. Atendimento sigiloso com presença em todo o território nacional.
             </p>
-
-            <div>
-              <button
-                onClick={() => setAdminViewActive(!adminViewActive)}
-                className="px-4 py-2.5 rounded bg-[#161920] hover:bg-[#1A1D26] text-slate-200 border border-slate-700/80 hover:border-[#D4AF37] font-semibold text-xs flex items-center gap-2 transition-all"
-              >
-                <Shield className="w-4 h-4 text-[#D4AF37]" />
-                <span>{adminViewActive ? 'Voltar para o Site Público' : 'Acessar Painel Admin (/admin)'}</span>
-              </button>
-            </div>
           </div>
 
         </div>

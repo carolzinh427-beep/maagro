@@ -115,7 +115,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   const loginAdmin = (user: string, pass: string) => {
-    if ((user.toLowerCase() === 'admin' && pass === 'admin123') || (user.length > 0 && pass === 'admin')) {
+    if ((user.toLowerCase() === 'maagro' && pass === 'maagro26') || (user.toLowerCase() === 'admin' && pass === 'admin123')) {
       setIsAdminLoggedIn(true);
       localStorage.setItem('ma_admin_auth', 'true');
       showToast('Autenticado com sucesso no Painel Admin');

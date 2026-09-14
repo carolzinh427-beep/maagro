@@ -48,7 +48,7 @@ export const MachineDetailModal: React.FC<MachineDetailModalProps> = ({ machine,
           
           {/* Gallery */}
           <div className="space-y-3">
-            <div className="relative h-72 sm:h-96 w-full rounded-xl overflow-hidden bg-slate-900 border border-slate-800">
+            <div className="relative h-48 sm:h-80 md:h-96 w-full rounded-xl overflow-hidden bg-slate-900 border border-slate-800">
               <img
                 src={machine.photos[activePhotoIdx]}
                 alt={machine.name}

@@ -129,7 +129,7 @@ export const MachinesSection: React.FC = () => {
               >
                 <div>
                   {/* Photo Container */}
-                  <div className="relative h-60 overflow-hidden bg-slate-900">
+                  <div className="relative h-44 sm:h-60 overflow-hidden bg-slate-900">
                     <img
                       src={machine.photos[0]}
                       alt={machine.name}
