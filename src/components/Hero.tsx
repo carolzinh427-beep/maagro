@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
           <img 
             src="/images/logo.png" 
             alt="M.A. Agronegócios Logo Oficial" 
-            className="h-24 sm:h-36 md:h-40 object-contain mix-blend-screen contrast-125 brightness-110 drop-shadow-xl hover:scale-105 transition-transform duration-300"
+            className="h-28 sm:h-40 md:h-48 object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
           />
         </div>
 
