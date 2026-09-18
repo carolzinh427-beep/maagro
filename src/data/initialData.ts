@@ -37,7 +37,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     state: 'Mato Grosso',
     city: 'Lucas do Rio Verde',
     areaHectares: 3400,
-    priceDisplay: '14 sacos de soja / ha / ano',
+    priceDisplay: 'Sob Consulta',
     shortDescription: 'Oportunidade para expansão agrícola. Área consolidada para plantio de safra e safrinha de grãos.',
     fullDescription: 'Área de arrendamento com contrato de longo prazo (5 a 10 anos). Solo corrigido, com ótimo histórico de produtividade nas últimas 8 safras. Localizada a 15 km da rodovia principal, facilitando o escoamento direto para as tradings.',
     features: [
