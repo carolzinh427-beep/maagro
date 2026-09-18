@@ -7,6 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        sage: {
+          50: '#F7FAF6',
+          100: '#F3F7F2',
+          200: '#E4EDE2',
+          300: '#D0DFD0',
+          400: '#A4C2A4',
+          500: '#759E75',
+          600: '#4A754A',
+          700: '#2D522E',
+          800: '#1D3B1E',
+          900: '#122613',
+        },
         gold: {
           50: '#FFFDF5',
           100: '#FFF9E5',
@@ -18,13 +30,6 @@ export default {
           700: '#B89326',
           800: '#8C6D14',
           900: '#5E4909',
-        },
-        dark: {
-          bg: '#0A0C10',
-          surface: '#12151C',
-          card: '#161920',
-          border: '#1F2430',
-          hover: '#1A1D26',
         }
       },
       fontFamily: {
@@ -32,8 +37,8 @@ export default {
         outfit: ['Outfit', 'sans-serif'],
       },
       boxShadow: {
-        'gold-glow': '0 0 20px rgba(212, 175, 55, 0.15)',
-        'gold-glow-lg': '0 0 35px rgba(212, 175, 55, 0.3)',
+        'card-soft': '0 4px 20px -2px rgba(25, 45, 26, 0.06), 0 2px 6px -1px rgba(25, 45, 26, 0.04)',
+        'card-hover': '0 12px 30px -4px rgba(25, 45, 26, 0.12), 0 4px 12px -2px rgba(212, 175, 55, 0.2)',
       }
     },
   },
