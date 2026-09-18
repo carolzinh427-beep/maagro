@@ -6,18 +6,15 @@ export const ContactSection: React.FC = () => {
   const { openInterestModal } = useApp();
 
   return (
-    <section id="contato" className="py-24 bg-[#EBF2EA] relative border-t border-[#D4E2D5]">
+    <section id="contato" className="py-16 sm:py-24 bg-[#EBF2EA] relative border-t border-[#D4E2D5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1D3B1E] text-[#E5C158] text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
-            <span>Canais Oficiais</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#122613] font-outfit tracking-tight">
-            Entre em Contato com a <span className="text-[#B8860B]">M.A. Agronegócios</span>
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#122613] font-heading uppercase tracking-wide">
+            ENTRE EM CONTATO COM A <span className="text-[#B8860B]">M.A. AGRONEGÓCIOS</span>
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2">
+          <p className="text-slate-600 text-xs sm:text-base mt-2">
             Estamos à disposição para atender proprietários, investidores e produtores rurais com total sigilo e agilidade
           </p>
         </div>
@@ -36,7 +33,7 @@ export const ContactSection: React.FC = () => {
               href="https://wa.me/5545998259664?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20atendimento%20com%20a%20M.A.%20Agroneg%C3%B3cios."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-bold text-xs py-2.5 rounded-xl block text-center shadow-sm"
+              className="w-full bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-bold text-xs py-2.5 rounded-xl block text-center shadow-sm uppercase font-heading"
             >
               Falar pelo WhatsApp
             </a>
@@ -51,7 +48,7 @@ export const ContactSection: React.FC = () => {
             <h4 className="text-sm font-bold text-[#122613] mt-1 mb-3 truncate">contato@maagronegocios.com.br</h4>
             <button
               onClick={() => openInterestModal({ type: 'Compra', title: 'Contato via E-mail' })}
-              className="w-full bg-[#F3F7F2] hover:bg-[#E4EDE2] text-[#122613] border border-[#D0DFD0] font-bold text-xs py-2.5 rounded-xl block text-center"
+              className="w-full bg-[#F3F7F2] hover:bg-[#E4EDE2] text-[#122613] border border-[#D0DFD0] font-bold text-xs py-2.5 rounded-xl block text-center uppercase font-heading"
             >
               Enviar Mensagem
             </button>
@@ -68,7 +65,7 @@ export const ContactSection: React.FC = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#F3F7F2] hover:bg-[#E4EDE2] text-[#122613] border border-[#D0DFD0] font-bold text-xs py-2.5 rounded-xl block text-center"
+              className="w-full bg-[#F3F7F2] hover:bg-[#E4EDE2] text-[#122613] border border-[#D0DFD0] font-bold text-xs py-2.5 rounded-xl block text-center uppercase font-heading"
             >
               Seguir no Instagram
             </a>

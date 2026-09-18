@@ -39,9 +39,6 @@ export const CatalogSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1D3B1E] text-[#E5C158] text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
-              <span>Catálogo de Propriedades</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#122613] font-heading uppercase tracking-wide">
               FAZENDAS E ARRENDAMENTOS <span className="text-[#B8860B]">DISPONÍVEIS</span>
             </h2>
@@ -121,7 +118,7 @@ export const CatalogSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Property Grid: 2 columns on mobile (grid-cols-2), 3 on desktop */}
+        {/* Property Grid */}
         {filteredProperties.length === 0 ? (
           <div className="bg-white p-8 rounded-2xl text-center border border-[#D9E5DA] my-8 shadow-sm">
             <Filter className="w-10 h-10 text-slate-400 mx-auto mb-3" />
@@ -148,7 +145,7 @@ export const CatalogSection: React.FC = () => {
                 className="green-card rounded-xl sm:rounded-2xl overflow-hidden group flex flex-col justify-between"
               >
                 <div>
-                  {/* Photo Container - Compact on mobile */}
+                  {/* Photo Container */}
                   <div className="relative h-28 sm:h-48 md:h-56 overflow-hidden bg-slate-900">
                     <img
                       src={prop.photos[0]}

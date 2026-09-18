@@ -3,17 +3,14 @@ import { Warehouse, TrendingUp, Tractor, ArrowRight } from 'lucide-react';
 
 export const OpportunitiesSection: React.FC = () => {
   return (
-    <section id="oportunidades" className="py-24 bg-[#F3F7F2] relative">
+    <section id="oportunidades" className="py-20 bg-[#F3F7F2] relative">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E5EDE3] border border-[#C5DAC6] text-[#1D3B1E] text-xs font-bold uppercase tracking-wider mb-4">
-            <span>Portfólio Estratégico</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#122613] font-outfit tracking-tight leading-tight mb-4">
-            Encontre a oportunidade certa para o seu <span className="text-[#B8860B]">negócio</span>
+            ENCONTRE A OPORTUNIDADE CERTA PARA O SEU <span className="text-[#B8860B]">NEGÓCIO</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             Reunimos propriedades rurais selecionadas com alto potencial produtivo, contratos de arrendamento estruturados e maquinários agrícolas procedentes para impulsionar seus resultados
@@ -29,8 +26,7 @@ export const OpportunitiesSection: React.FC = () => {
               <div className="w-14 h-14 rounded-xl bg-[#1D3B1E] text-[#E5C158] flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] group-hover:text-[#0A0C10] transition-all duration-300 shadow-md">
                 <Warehouse className="w-7 h-7" />
               </div>
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B8860B] font-extrabold">Compra e Venda</span>
-              <h3 className="text-2xl font-bold text-[#122613] mt-1 mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
+              <h3 className="text-2xl font-bold text-[#122613] mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
                 FAZENDAS
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
@@ -55,8 +51,7 @@ export const OpportunitiesSection: React.FC = () => {
               <div className="w-14 h-14 rounded-xl bg-[#1D3B1E] text-[#E5C158] flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] group-hover:text-[#0A0C10] transition-all duration-300 shadow-md">
                 <TrendingUp className="w-7 h-7" />
               </div>
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B8860B] font-extrabold">Expansão Produtiva</span>
-              <h3 className="text-2xl font-bold text-[#122613] mt-1 mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
+              <h3 className="text-2xl font-bold text-[#122613] mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
                 ARRENDAMENTOS
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
@@ -81,8 +76,7 @@ export const OpportunitiesSection: React.FC = () => {
               <div className="w-14 h-14 rounded-xl bg-[#1D3B1E] text-[#E5C158] flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] group-hover:text-[#0A0C10] transition-all duration-300 shadow-md">
                 <Tractor className="w-7 h-7" />
               </div>
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B8860B] font-extrabold">Alta Tecnologia</span>
-              <h3 className="text-2xl font-bold text-[#122613] mt-1 mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
+              <h3 className="text-2xl font-bold text-[#122613] mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
                 MÁQUINAS
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
