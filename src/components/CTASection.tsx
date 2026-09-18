@@ -11,9 +11,6 @@ export const CTASection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="bg-[#122613] p-8 sm:p-12 rounded-3xl border border-[#D4AF37]/40 shadow-2xl text-center relative overflow-hidden">
           
-          {/* Background Glow inside banner */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-[#D4AF37]/15 rounded-full filter blur-3xl pointer-events-none" />
-
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1D3B1E] border border-[#D4AF37]/40 text-[#E5C158] text-xs font-bold uppercase tracking-wider mb-6">
             <MessageSquare className="w-3.5 h-3.5 text-[#E5C158]" />
             <span>Atendimento Exclusivo</span>
@@ -21,17 +18,17 @@ export const CTASection: React.FC = () => {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-outfit tracking-tight leading-tight mb-4">
             Tem uma propriedade, máquina ou <br className="hidden sm:inline" />
-            oportunidade para <span className="gold-gradient-text">negociar?</span>
+            oportunidade para <span className="text-[#E5C158]">negociar?</span>
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-            Fale com a M.A. Agronegócios e encontre o melhor caminho para o seu negócio com avaliação precisa, discrição e agilidade comercial.
+            Fale com a M.A. Agronegócios e encontre o melhor caminho para o seu negócio com avaliação precisa, discrição e agilidade comercial
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => openInterestModal({ type: 'Venda', title: 'Avaliação de Imóvel / Máquina' })}
-              className="w-full sm:w-auto gold-gradient-bg gold-gradient-bg-hover text-[#0A0C10] font-extrabold text-base px-9 py-4 rounded-xl shadow-xl flex items-center justify-center gap-3 transform hover:-translate-y-0.5 transition-all"
+              className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-extrabold text-base px-9 py-4 rounded-xl shadow-xl flex items-center justify-center gap-3 transition-all"
             >
               <span>Falar com a M.A.</span>
               <ArrowUpRight className="w-5 h-5 text-[#0A0C10]" />

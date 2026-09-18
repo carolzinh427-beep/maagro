@@ -1,10 +1,7 @@
 import React from 'react';
-import { Shield, ArrowUp, Phone } from 'lucide-react';
-import { useApp } from '../context/AppContext';
+import { ArrowUp, Phone } from 'lucide-react';
 
 export const Footer: React.FC = () => {
-  const { setAdminViewActive, adminViewActive } = useApp();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -17,16 +14,15 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded bg-gradient-to-br from-[#E5C158] via-[#D4AF37] to-[#8C6D14] flex items-center justify-center shadow-lg shadow-[#D4AF37]/20">
-                <span className="font-extrabold text-[#0A0C10] text-base tracking-wider font-outfit">MA</span>
-              </div>
-              <div className="font-bold text-lg tracking-wider text-white uppercase font-outfit">
-                M.A. <span className="gold-gradient-text">AGRONEGÓCIOS</span>
-              </div>
+              <img 
+                src="/images/logo.png" 
+                alt="M.A. Agronegócios Logo" 
+                className="h-10 object-contain"
+              />
             </div>
 
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Especializada na compra, venda e arrendamento de propriedades rurais de alto padrão, além de intermediação de máquinas agrícolas em todo o território nacional.
+              Especializada na compra, venda e arrendamento de propriedades rurais de alto padrão, além de intermediação de máquinas agrícolas em todo o território nacional
             </p>
 
             <div className="pt-2">
@@ -47,15 +43,15 @@ export const Footer: React.FC = () => {
               <li><a href="#arrendamentos" className="hover:text-[#E5C158] transition-colors">Oportunidades de Arrendamento</a></li>
               <li><a href="#maquinas" className="hover:text-[#E5C158] transition-colors">Máquinas Agrícolas</a></li>
               <li><a href="#sobre" className="hover:text-[#E5C158] transition-colors">Sobre a Empresa</a></li>
-              <li><a href="#contato" className="hover:text-[#E5C158] transition-colors">Contato & Localização</a></li>
+              <li><a href="#contato" className="hover:text-[#E5C158] transition-colors">Contato e Localização</a></li>
             </ul>
           </div>
 
           {/* Institutional Info */}
-          <div className="md:col-span-7 space-y-3">
+          <div className="md:col-span-4 space-y-3">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider font-outfit">M.A. Agronegócios</h4>
             <p className="text-slate-400 text-xs leading-relaxed max-w-md">
-              Plataforma comercial e institucional desenvolvida para intermediação de propriedades rurais de grande porte e máquinas agrícolas. Atendimento sigiloso com presença em todo o território nacional.
+              Plataforma comercial e institucional desenvolvida para intermediação de propriedades rurais de grande porte e máquinas agrícolas com atendimento sigiloso e presença em todo o país
             </p>
           </div>
 
@@ -64,7 +60,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>
-            © {new Date().getFullYear()} M.A. Agronegócios. Todos os direitos reservados.
+            © {new Date().getFullYear()} M.A. Agronegócios. Todos os direitos reservados
           </div>
 
           <button

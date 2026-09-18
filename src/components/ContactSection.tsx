@@ -15,10 +15,10 @@ export const ContactSection: React.FC = () => {
             <span>Canais Oficiais</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#122613] font-outfit tracking-tight">
-            Entre em Contato com a <span className="gold-gradient-text">M.A. Agronegócios</span>
+            Entre em Contato com a <span className="text-[#B8860B]">M.A. Agronegócios</span>
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Estamos à disposição para atender proprietários, investidores e produtores rurais com total sigilo e agilidade.
+            Estamos à disposição para atender proprietários, investidores e produtores rurais com total sigilo e agilidade
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export const ContactSection: React.FC = () => {
               href="https://wa.me/5545998259664?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20atendimento%20com%20a%20M.A.%20Agroneg%C3%B3cios."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full gold-gradient-bg text-[#0A0C10] font-bold text-xs py-2.5 rounded-xl block text-center shadow-sm"
+              className="w-full bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-bold text-xs py-2.5 rounded-xl block text-center shadow-sm"
             >
               Falar pelo WhatsApp
             </a>
@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
               <MapPin className="w-6 h-6" />
             </div>
             <span className="text-xs text-slate-500 font-mono uppercase font-semibold block">Sede Operacional</span>
-            <h4 className="text-sm font-bold text-[#122613] mt-1 mb-3">Cascavel / PR • Brasil</h4>
+            <h4 className="text-sm font-bold text-[#122613] mt-1 mb-3">Cascavel, PR, Brasil</h4>
             <span className="text-[11px] text-slate-500 block font-mono font-medium">Atendimento Nacional</span>
           </div>
 

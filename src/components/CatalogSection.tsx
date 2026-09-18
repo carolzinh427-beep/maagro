@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Maximize2, ShieldCheck, ArrowRight, Filter, Info, Eye } from 'lucide-react';
+import { MapPin, Maximize2, Filter, Info, Eye } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { Property } from '../types';
 
@@ -43,10 +43,10 @@ export const CatalogSection: React.FC = () => {
               <span>Catálogo de Propriedades</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#122613] font-outfit tracking-tight">
-              Fazendas e Arrendamentos <span className="gold-gradient-text">Disponíveis</span>
+              Fazendas e Arrendamentos <span className="text-[#B8860B]">Disponíveis</span>
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
-              Propriedades com alta capacidade produtiva, documentação regularizada e oportunidades de expansão agrícola.
+              Propriedades com alta capacidade produtiva, documentação regularizada e oportunidades de expansão agrícola
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export const CatalogSection: React.FC = () => {
                   onClick={() => setSelectedType(type)}
                   className={`px-5 py-2 rounded-lg text-xs font-bold transition-all duration-200 ${
                     selectedType === type
-                      ? 'gold-gradient-bg text-[#0A0C10] shadow-md'
+                      ? 'bg-[#D4AF37] text-[#0A0C10] shadow-md'
                       : 'text-slate-600 hover:text-[#122613] hover:bg-white'
                   }`}
                 >
@@ -84,7 +84,7 @@ export const CatalogSection: React.FC = () => {
               <div>
                 <label className="block text-[11px] uppercase font-bold text-slate-500 mb-1 flex items-center gap-1">
                   <MapPin className="w-3.5 h-3.5 text-[#B8860B]" />
-                  <span>Estado / Região</span>
+                  <span>Estado e Região</span>
                 </label>
                 <select
                   value={selectedState}
@@ -111,9 +111,9 @@ export const CatalogSection: React.FC = () => {
                   className="w-full bg-[#F8FAFC] border border-[#D0DFD0] rounded-xl px-3.5 py-2 text-sm text-[#122613] font-medium focus:outline-none focus:border-[#D4AF37]"
                 >
                   <option value="Todas">Todas as Áreas</option>
-                  <option value="small">Até 1.000 ha</option>
-                  <option value="medium">1.000 ha a 3.000 ha</option>
-                  <option value="large">Acima de 3.000 ha</option>
+                  <option value="small">Até 1000 ha</option>
+                  <option value="medium">1000 ha a 3000 ha</option>
+                  <option value="large">Acima de 3000 ha</option>
                 </select>
               </div>
             </div>
@@ -127,7 +127,7 @@ export const CatalogSection: React.FC = () => {
             <Filter className="w-12 h-12 text-slate-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-[#122613] mb-2">Nenhuma propriedade encontrada</h3>
             <p className="text-slate-600 text-sm max-w-md mx-auto mb-6">
-              Nenhum imóvel corresponde aos filtros selecionados no momento. Tente alterar os critérios de busca.
+              Nenhum imóvel corresponde aos filtros selecionados no momento. Tente alterar os critérios de busca
             </p>
             <button
               onClick={() => {
@@ -135,7 +135,7 @@ export const CatalogSection: React.FC = () => {
                 setSelectedState('Todos');
                 setAreaFilter('Todas');
               }}
-              className="gold-gradient-bg text-[#0A0C10] font-bold text-xs px-6 py-2.5 rounded-xl"
+              className="bg-[#D4AF37] text-[#0A0C10] font-bold text-xs px-6 py-2.5 rounded-xl"
             >
               Limpar Filtros
             </button>
@@ -161,7 +161,7 @@ export const CatalogSection: React.FC = () => {
                     <div className="absolute top-4 left-4">
                       <span className={`px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider ${
                         prop.negotiationType === 'Venda'
-                          ? 'gold-gradient-bg text-[#0A0C10] shadow-md'
+                          ? 'bg-[#D4AF37] text-[#0A0C10] shadow-md'
                           : 'bg-[#1D3B1E] text-emerald-300 font-bold border border-emerald-500/30'
                       }`}>
                         {prop.negotiationType}
@@ -183,7 +183,7 @@ export const CatalogSection: React.FC = () => {
                     <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-white">
                       <div className="flex items-center gap-1.5 font-semibold bg-[#0A0C10]/85 px-2.5 py-1 rounded-lg backdrop-blur-md">
                         <MapPin className="w-3.5 h-3.5 text-[#E5C158]" />
-                        <span>{prop.city} - {prop.state}</span>
+                        <span>{prop.city}, {prop.state}</span>
                       </div>
                       <div className="flex items-center gap-1.5 font-extrabold text-[#E5C158] bg-[#0A0C10]/85 px-2.5 py-1 rounded-lg backdrop-blur-md font-mono">
                         <Maximize2 className="w-3.5 h-3.5 text-[#E5C158]" />
@@ -222,7 +222,7 @@ export const CatalogSection: React.FC = () => {
 
                   <button
                     onClick={() => setSelectedProperty(prop)}
-                    className="gold-gradient-bg gold-gradient-bg-hover text-[#0A0C10] font-extrabold text-xs px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-md group-hover:shadow-lg"
+                    className="bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-extrabold text-xs px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-md"
                   >
                     <span>Ver detalhes</span>
                     <Eye className="w-3.5 h-3.5 text-[#0A0C10]" />

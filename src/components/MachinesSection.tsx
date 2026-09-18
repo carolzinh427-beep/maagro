@@ -38,13 +38,13 @@ export const MachinesSection: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1D3B1E] text-[#E5C158] text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
               <Tractor className="w-4 h-4 text-[#E5C158]" />
-              <span>Maquinário & Tecnologia</span>
+              <span>Maquinário e Tecnologia</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#122613] font-outfit tracking-tight">
-              Máquinas Agrícolas <span className="gold-gradient-text">Disponíveis</span>
+              Máquinas Agrícolas <span className="text-[#B8860B]">Disponíveis</span>
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
-              Equipamentos de alta performance das melhores marcas do mercado, revisados e prontos para operação em campo.
+              Equipamentos de alta performance das melhores marcas do mercado revisados e prontos para operação em campo
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export const MachinesSection: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-5 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-200 flex items-center gap-2 ${
                   selectedCategory === cat
-                    ? 'gold-gradient-bg text-[#0A0C10] shadow-md scale-105'
+                    ? 'bg-[#D4AF37] text-[#0A0C10] shadow-md scale-105'
                     : 'bg-white text-slate-700 hover:text-[#122613] border border-[#D0DFD0] hover:bg-[#EAF2EA]'
                 }`}
               >
@@ -106,14 +106,14 @@ export const MachinesSection: React.FC = () => {
             <Filter className="w-12 h-12 text-slate-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-[#122613] mb-2">Nenhuma máquina encontrada nesta categoria</h3>
             <p className="text-slate-600 text-sm max-w-md mx-auto mb-6">
-              Altere os filtros acima para visualizar outras opções de tratores, colheitadeiras e pulverizadores.
+              Altere os filtros acima para visualizar outras opções de tratores, colheitadeiras e pulverizadores
             </p>
             <button
               onClick={() => {
                 setSelectedCategory('Todas');
                 setSelectedBrand('Todas');
               }}
-              className="gold-gradient-bg text-[#0A0C10] font-bold text-xs px-6 py-2.5 rounded-xl"
+              className="bg-[#D4AF37] text-[#0A0C10] font-bold text-xs px-6 py-2.5 rounded-xl"
             >
               Resetar Filtros
             </button>
@@ -163,7 +163,7 @@ export const MachinesSection: React.FC = () => {
                   {/* Machine Details */}
                   <div className="p-6">
                     <div className="text-xs text-[#B8860B] font-mono font-bold uppercase mb-1">
-                      {machine.brand} • {machine.model}
+                      {machine.brand} {machine.model}
                     </div>
 
                     <h3 className="text-xl font-bold text-[#122613] mb-3 font-outfit group-hover:text-[#B8860B] transition-colors">
@@ -204,7 +204,7 @@ export const MachinesSection: React.FC = () => {
 
                   <button
                     onClick={() => setSelectedMachine(machine)}
-                    className="gold-gradient-bg gold-gradient-bg-hover text-[#0A0C10] font-extrabold text-xs px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-md group-hover:shadow-lg"
+                    className="bg-[#D4AF37] hover:bg-[#E5C158] text-[#0A0C10] font-extrabold text-xs px-4 py-2.5 rounded-xl flex items-center gap-1.5 transition-all shadow-md"
                   >
                     <span>Ver máquina</span>
                     <Eye className="w-3.5 h-3.5 text-[#0A0C10]" />

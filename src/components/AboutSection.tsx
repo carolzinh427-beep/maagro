@@ -5,9 +5,6 @@ export const AboutSection: React.FC = () => {
   return (
     <section id="sobre" className="py-24 bg-[#EBF2EA] relative border-t border-b border-[#D4E2D5]">
       
-      {/* Background Accent */}
-      <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#D4AF37]/10 rounded-full filter blur-3xl pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -17,7 +14,7 @@ export const AboutSection: React.FC = () => {
               <img
                 src="/images/hero.jpg"
                 alt="M.A. Agronegócios no campo"
-                className="w-full h-64 sm:h-[480px] object-cover"
+                className="w-full h-64 sm:h-[420px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0C10] via-transparent to-transparent opacity-85" />
 
@@ -28,7 +25,7 @@ export const AboutSection: React.FC = () => {
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-[#122613] font-bold text-sm font-outfit">Segurança Jurídica & Sigilo</h4>
+                    <h4 className="text-[#122613] font-bold text-sm font-outfit">Segurança Jurídica e Sigilo</h4>
                     <p className="text-slate-600 text-xs mt-0.5">Auditoria prévia de certidões e mapas cartográficos</p>
                   </div>
                 </div>
@@ -50,15 +47,15 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#122613] font-outfit tracking-tight leading-tight">
-              Conectando oportunidades ao <span className="gold-gradient-text">campo.</span>
+              Conectando oportunidades ao <span className="text-[#B8860B]">campo</span>
             </h2>
 
             <p className="text-slate-700 text-base leading-relaxed font-medium">
-              A **M.A. Agronegócios** é referência em negócios rurais de alto padrão no Brasil. Atuamos com extrema precisão na intermediação comercial de grandes fazendas para compra e venda, contratos de arrendamento estruturados e comercialização de máquinas agrícolas de ponta.
+              A M.A. Agronegócios é referência em negócios rurais de alto padrão no Brasil. Atuamos com extrema precisão na intermediação comercial de grandes fazendas para compra e venda, contratos de arrendamento estruturados e comercialização de máquinas agrícolas de ponta
             </p>
 
             <p className="text-slate-600 text-sm leading-relaxed">
-              Entendemos que transações rurais envolvem grandes patrimônios e decisões estratégicas para gerações. Por isso, nossa equipe alia conhecimento técnico agronômico, governança jurídica rigorosa e ampla rede de contatos entre produtores e investidores.
+              Entendemos que transações rurais envolvem grandes patrimônios e decisões estratégicas para gerações. Por isso, nossa equipe alia conhecimento técnico agronômico, governança jurídica rigorosa e ampla rede de contatos entre produtores e investidores
             </p>
 
             {/* Institutional Pillars */}
@@ -66,8 +63,8 @@ export const AboutSection: React.FC = () => {
               <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#D9E5DA] shadow-sm">
                 <Scale className="w-5 h-5 text-[#1D3B1E] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-[#122613] text-sm font-bold">Transparência & Conformidade</h4>
-                  <p className="text-slate-600 text-xs mt-0.5">Análise completa de CAR, GEO e certidões imobiliárias.</p>
+                  <h4 className="text-[#122613] text-sm font-bold">Transparência e Conformidade</h4>
+                  <p className="text-slate-600 text-xs mt-0.5">Análise completa de CAR, GEO e certidões imobiliárias</p>
                 </div>
               </div>
 
@@ -75,44 +72,9 @@ export const AboutSection: React.FC = () => {
                 <FileText className="w-5 h-5 text-[#1D3B1E] shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-[#122613] text-sm font-bold">Valoração Assertiva</h4>
-                  <p className="text-slate-600 text-xs mt-0.5">Avaliação fundamentada na capacidade real de produção por ha.</p>
+                  <p className="text-slate-600 text-xs mt-0.5">Avaliação fundamentada na capacidade real de produção por hectare</p>
                 </div>
               </div>
-            </div>
-
-            {/* Metrics Counters with Editable Placeholders */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-[#C5DAC6]">
-              
-              <div className="bg-white p-4 rounded-2xl text-center border border-[#D9E5DA] shadow-sm">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1D3B1E] font-mono">
-                  [X]+
-                </div>
-                <div className="text-xs text-slate-700 font-bold mt-1">
-                  Oportunidades
-                </div>
-                <div className="text-[10px] text-slate-400 font-mono mt-0.5">Placeholder Editável</div>
-              </div>
-
-              <div className="bg-white p-4 rounded-2xl text-center border border-[#D9E5DA] shadow-sm">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1D3B1E] font-mono">
-                  [X]
-                </div>
-                <div className="text-xs text-slate-700 font-bold mt-1">
-                  Anos Experiência
-                </div>
-                <div className="text-[10px] text-slate-400 font-mono mt-0.5">Placeholder Editável</div>
-              </div>
-
-              <div className="bg-white p-4 rounded-2xl text-center border border-[#D9E5DA] shadow-sm">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#1D3B1E] font-mono">
-                  [X]
-                </div>
-                <div className="text-xs text-slate-700 font-bold mt-1">
-                  Clientes Atendidos
-                </div>
-                <div className="text-[10px] text-slate-400 font-mono mt-0.5">Placeholder Editável</div>
-              </div>
-
             </div>
 
           </div>
