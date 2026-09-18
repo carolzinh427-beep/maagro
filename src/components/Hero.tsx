@@ -21,17 +21,17 @@ export const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-4">
         
-        {/* Official Brand Logo Anexada */}
-        <div className="flex justify-center mb-8">
+        {/* Transparent Official Logo (Sem Fundo) */}
+        <div className="flex justify-center mb-6">
           <img 
             src="/images/logo.png" 
             alt="M.A. Agronegócios Logo Oficial" 
-            className="h-32 sm:h-44 md:h-52 object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+            className="h-36 sm:h-48 md:h-56 object-contain mix-blend-screen contrast-125 brightness-110 drop-shadow-2xl hover:scale-105 transition-transform duration-300"
           />
         </div>
 
-        {/* Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 font-outfit">
+        {/* Headline with Farmilo Font Style */}
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 font-farmilo">
           Negócios que movem o <span className="text-[#E5C158]">agronegócio</span>
         </h1>
 

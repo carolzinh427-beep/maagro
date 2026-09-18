@@ -35,6 +35,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         outfit: ['Outfit', 'sans-serif'],
+        farmilo: ['Fraunces', 'Syne', 'Outfit', 'serif'],
       },
       boxShadow: {
         'card-soft': '0 4px 20px -2px rgba(25, 45, 26, 0.06), 0 2px 6px -1px rgba(25, 45, 26, 0.04)',
